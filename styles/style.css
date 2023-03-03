@@ -13,13 +13,30 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
+.header__logo_place_header {
+  
+}
+
+.header__main--illustration {
+  width: 765px;
+  height: 608px;
+  position:absolute;
+  bottom: 0;
+  right: 0;
+ z-index: 1;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: blue;
+  position:absolute;
+  right: 0;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
