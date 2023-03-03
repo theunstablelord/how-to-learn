@@ -10,15 +10,45 @@
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
 }
 
+.logo {
+  z-index: 1;
+}
+
+
 .header__logo_place_header {
-  
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  align-self: center;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main--illustration {
@@ -27,7 +57,7 @@
   position:absolute;
   bottom: 0;
   right: 0;
- z-index: 1;
+  z-index: 1;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -36,10 +66,72 @@
   background-color: blue;
   position:absolute;
   right: 0;
+  top: 64px;
   z-index: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.description {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin-top: 0;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin-top: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.two-columns__paragraph:not:last-child {
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: none;
+}
+
+.kaufman {
+  background-color:black;
+}
+
+.section-title__theme_dark {
+  color: white;
+}
+
+.section-subtitle__theme_dark {
+  color: white;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
