@@ -82,7 +82,6 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  
 }
 
 .two-columns__brief {
@@ -112,8 +111,55 @@
   font-weight: 600;
 }
 
-.two-columns__paragraph:not:last-child {
+.two-columns__paragraph:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.feynman {
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  min-height: 890px;
+  flex-direction: column;
+}
+
+.feynman__title {
+  display: flex;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  margin: 100px auto 0;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  display: flex;
+  text-align: center;
+  margin: 70px auto 0;
+  z-index: 2;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feynman__photo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .digits {
@@ -145,32 +191,48 @@
   margin: 0 auto 100px;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .table__cell {
   width: 250px;
+  margin-top: 60px;
 }
 
 .table__heading {
-  
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .table__text {
-  
+  margin: 20px 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__text_footer {
+  margin: 20px 0 0;
 }
 
 .list {
   list-style: none;
+  padding: 0;
 }
 
 .kaufman {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color:black;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
 }
 
 .section-title__theme_dark {
+  margin: 90px 0 0;
   color: white;
 }
 
@@ -180,7 +242,78 @@
 
 .table__cell_theme_dark {
   width: 200px;
+  margin-top: 80px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+
+.table__theme_dark {
+  margin: 0px auto 90px;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+}
+
+.footer {
+  display: flex;
+  min-height: 350px;
+  color: white;
+  background-color: #1f1f1f;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 0 40px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  position: relative;
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__logo_place_footer {
+  width: 232px;
+}
+
+.footer__columns {
+  display: flex;
+  width: 90%;
+  margin: 60px auto 40px;
+  justify-content: space-between;
+}
+
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links {
+  
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: #f2f2f2;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
