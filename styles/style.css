@@ -315,6 +315,11 @@
 
 .footer__column-links {
   margin: 0;
+  padding: 20px 0 16px;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
 }
 
 .footer__column-link {
