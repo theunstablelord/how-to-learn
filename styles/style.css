@@ -16,6 +16,7 @@
   max-height: 756px;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -53,6 +54,11 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .5s linear;
+}
+
+.header__link:hover {
+  opacity: .5;
 }
 
 .header__main-illustration {
@@ -155,6 +161,11 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .5s linear;
+}
+
+.feynman__link:hover {
+  opacity: .5;
 }
 
 .feynman__photo {
@@ -327,6 +338,11 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  transition: opacity .5s linear;
+}
+
+.footer__column-link:hover {
+  opacity: .5;
 }
 
 .techniques {
@@ -483,6 +499,11 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity .5s linear;
+}
+
+.khan__buy-link:hover {
+  opacity: .5;
 }
 
 .resources {
@@ -501,4 +522,25 @@
 .resources__logo {
   width: 270px;
   height: 38px;
+}
+
+.resources__link {
+  transition: opacity .5s linear;
+}
+
+.resources__link:hover {
+  opacity: .5;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+} 
+
+.rotation {
+  animation: rotation 20s linear infinite;
 }
