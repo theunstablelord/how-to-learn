@@ -260,6 +260,7 @@
   z-index: 3;
 }
 
+
 .table_theme_dark {
   margin: 0px auto 90px;
 }
@@ -417,6 +418,7 @@
   height: 316px;
   margin: 0;
   margin-right: 20px;
+  border: none;
 }
 
 .video__iframe:last-of-type{
